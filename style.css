@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Estilos gerais */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    color: #000; /* Preto para destaque */
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Cabeçalho */
+.header {
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    background-color: #f1f1f100;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+.nav-menu li a {
+    color: #fff9f9;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+    color: #05632ccb;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #000;
+}
+
+/* Seção principal (Home) */
+.section.home {
+    text-align: center;
+    color: #fff;
+    padding: 120px 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('folha-fundo.jpg') center/cover no-repeat;
+}
+
+.section.home h2 {
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section.home p {
+    font-size: 22px;
+    color: #f3f3f3;
+    max-width: 800px;
+    margin: 20px auto 0;
+}
+
+/* Responsivo para menu */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 15px 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}
+/* Seção principal (Home) */
+.section.home {
+    text-align: center;
+    color: #fff;
+    padding: 120px 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('folha-fundo.jpg') center/cover no-repeat;
+}
+
+.section.home h2 {
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section.home p {
+    font-size: 22px;
+    color: #f3f3f3;
+    max-width: 800px;
+    margin: 20px auto 0;
+}
+
+/* Imagem logo */
+.logo1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+    margin-top: 20px;
+}
+
+/* Responsividade adicional */
+@media (max-width: 768px) {
+    .section.home h2 {
+        font-size: 36px;
+    }
+
+    .section.home p {
+        font-size: 18px;
+    }
+}
+
+/* Botão de voltar ao topo */
+.scroll-top {
+    background-color: #287392;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-top.visible {
+    display: flex;
+}
+
+/* Estilos gerais do formulário */
+.formulario {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.label-form {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.input-form {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 18px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-form:focus {
+    border-color: #05632ccb;
+    box-shadow: 0 0 8px #05632c8f;
+    outline: none;
+}
+
+.input-form[type="file"] {
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 16px;
+    background-color: #05632ccb;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #034914b0;
+}
+
+/* Efeito de placeholder */
+.input-form::placeholder {
+    color: #aaa;
+    font-weight: 400;
+}
+
+.input-form:focus::placeholder {
+    color: transparent;
+}
+
+/* Estilo de bordas arredondadas e leve */
+.input-form,
+.btn-submit {
+    border-radius: 10px;
+}
+
+/* Estilo do formulário para dispositivos móveis */
+@media (max-width: 768px) {
+    .formulario {
+        padding: 20px;
+    }
+    
+    .input-form {
+        padding: 12px;
+    }
+    
+    .btn-submit {
+        font-size: 16px;
+    }
+}
+
+/* Galeria estilo Masonry */
+.galeria {
+    column-count: 4;
+    column-gap: 1em;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.imagem {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    display: inline-block;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.imagem img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.imagem p {
+    margin: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Ajuste de colunas para responsividade */
+@media (max-width: 768px) {
+    .galeria {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .galeria {
+        column-count: 1;
+    }
+}
+
